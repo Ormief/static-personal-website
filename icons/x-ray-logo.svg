@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- X-ray frame -->
+  <rect x="4" y="3" width="16" height="18" rx="2" ry="2"
+        fill="none" stroke="currentColor" stroke-width="1.8"/>
+
+  <!-- Trachea -->
+  <line x1="12" y1="6.5" x2="12" y2="9"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Left lung outer shape -->
+  <path d="M11 9
+           c-2 0 -3.5 1.8 -3.5 4
+           v4"
+        fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right lung outer shape -->
+  <path d="M13 9
+           c2 0 3.5 1.8 3.5 4
+           v4"
+        fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Left bronchus -->
+  <path d="M12 9.5
+           c-1 .5 -1.5 1.2 -1.5 2"
+        fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round"/>
+
+  <!-- Right bronchus -->
+  <path d="M12 9.5
+           c1 .5 1.5 1.2 1.5 2"
+        fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linecap="round"/>
+
+  <!-- Medical cross -->
+  <path d="M18.5 5h2m-1-1v2"
+        stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
