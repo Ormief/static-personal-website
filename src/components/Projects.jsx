@@ -14,7 +14,7 @@ export default function Projects() {
                      hover:shadow-xl hover:scale-[1.02] hover:bg-gray-50 hover:border-gray-300"
         >
           <h3 className="text-xl font-semibold flex items-center gap-2">
-            <img src="/icons/website-project.svg" className="h-6 w-6 opacity-70" />
+            <img src="/website-project.svg" className="h-6 w-6 opacity-70" />
             Community Centre Website
           </h3>
           <p className="text-gray-600 mt-2">
@@ -29,7 +29,7 @@ export default function Projects() {
                      hover:shadow-xl hover:scale-[1.02] hover:bg-gray-50 hover:border-gray-300"
         >
           <h3 className="text-xl font-semibold flex items-center gap-2">
-            <img src="/icons/x-ray-logo.svg" className="h-6 w-6 opacity-70" />
+            <img src="/x-ray-logo.svg" className="h-6 w-6 opacity-70" />
             Diagnosing COVID‑19 from X‑Rays Using AI
           </h3>
           <p className="text-gray-600 mt-2">
@@ -53,7 +53,7 @@ export default function Projects() {
                      hover:shadow-xl hover:scale-[1.02] hover:bg-gray-50 hover:border-gray-300"
         >
           <h3 className="text-xl font-semibold flex items-center gap-2">
-            <img src="/icons/calorie-estimation.svg" className="h-6 w-6 opacity-70" />
+            <img src="/calorie-estimation.svg" className="h-6 w-6 opacity-70" />
             Calorie Estimation from Meal Images
           </h3>
           <p className="text-gray-600 mt-2">
@@ -77,7 +77,7 @@ export default function Projects() {
                      hover:shadow-xl hover:scale-[1.02] hover:bg-gray-50 hover:border-gray-300"
         >
           <h3 className="text-xl font-semibold flex items-center gap-2">
-            <img src="/icons/robot-telepresence.svg" className="h-6 w-6 opacity-70" />
+            <img src="/robot-telepresence.svg" className="h-6 w-6 opacity-70" />
             AI‑Assisted Robot Control for Remote Participants
           </h3>
           <p className="text-gray-600 mt-2">
