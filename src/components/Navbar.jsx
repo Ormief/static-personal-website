@@ -6,7 +6,7 @@ export default function Navbar() {
         {/* Logo + Name */}
         <div className="flex items-center gap-2">
 
-          <span className="font-semibold text-lg tracking-tight">
+          <span className="font-semibold text-lg tracking-tight hover:text-blue-500 transition-colors duration-700">
             Nick Fouras
           </span>
         </div>
