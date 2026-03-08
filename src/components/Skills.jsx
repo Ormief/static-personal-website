@@ -34,7 +34,7 @@ export default function Skills() {
               className="
                 font-medium 
                 transition-transform 
-                duration-300 
+                duration-500 
                 hover:scale-105
               "
             >

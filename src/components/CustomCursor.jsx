@@ -22,7 +22,7 @@ export default function CustomCursor() {
   // Smooth lag animation
   useEffect(() => {
     const follow = () => {
-      const speed = 0.08; // lower = more lag
+      const speed = 0.44; // lower = more lag
 
       cursor.current.x += (mouse.current.x - cursor.current.x) * speed;
       cursor.current.y += (mouse.current.y - cursor.current.y) * speed;

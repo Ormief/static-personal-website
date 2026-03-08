@@ -52,6 +52,9 @@ export default function App() {
 
 
 
+
+
+
   useEffect(() => {
     const elements = document.querySelectorAll(".reveal");
 

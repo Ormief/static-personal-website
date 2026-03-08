@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   // Interpolated values
-  const scale = 1 - shrink * 0.12;      // 1 → 0.88
+  const scale = 1 - shrink * 0.135;      // 1 → 0.88
   const opacity = 1 - shrink * 0.05;    // 1 → 0.75
   const padding = 120 - shrink * 60;    // 120px → 60px
 
@@ -28,7 +28,7 @@ export default function Hero() {
           opacity: opacity,
           paddingTop: `${padding}px`,
           paddingBottom: `${padding}px`,
-          transition: "transform 0.1s linear, opacity 0.1s linear, padding 0.1s linear",
+          transition: "transform 0.3s linear, opacity 0.3s linear, padding 0.3s linear",
         }}
         className="
           h-screen flex items-center justify-center 
