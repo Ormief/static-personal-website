@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Chatbot from "./components/Chatbot";
 import Footerq from "./components/Footerq";
+import CustomCursor from "./components/CustomCursor";
 
 export default function App() {
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function App() {
           }
         });
       },
-      { threshold: 0.016 }
+      { threshold: 0.023 }
     );
 
     elements.forEach((el) => observer.observe(el));
@@ -73,38 +74,39 @@ export default function App() {
   }, []);
 
 
-
-
-
-
-
   return (
-    <div className="font-sans bg-white text-black font-sans">
-      <Navbar />
+    <>
+      <CustomCursor />
+      <div className="font-sans bg-gray-200 text-black ">
+        
+        <Navbar />
 
-      <main className="space-y-32">
-        <Hero />
-        <section id="about" className="reveal">
-          <About />
-        </section>
+        <main className="space-y-32">
+          <Hero />
+          <section id="about" className="reveal">
+            <About />
+          </section>
 
-        <section id="skills" className="reveal">
-          <Skills />
-        </section>
+          <section id="skills" className="reveal">
+            <Skills />
+          </section>
 
-        <section id="projects" className="reveal">
-          <Projects />
-        </section>
+          <section id="projects" className="reveal">
+            <Projects />
+          </section>
 
-        <section id="contact" className="reveal">
-          <Contact />
-        </section>
+          <section id="contact" className="reveal">
+            <Contact />
+          </section>
 
-      </main>
+        </main>
 
-      <Footerq/>
+        <Footerq/>
 
-      <Chatbot />
-    </div>
+        <Chatbot />
+      </div>
+
+    </>
+
   );
 }

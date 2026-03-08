@@ -23,6 +23,17 @@
   transition: all 0.7s ease-out;
 }
 
+
+* {
+  cursor: none !important;
+}
+
+
+#chatbot-container * {
+  cursor: auto !important;
+}
+
+
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);

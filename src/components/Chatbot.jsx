@@ -136,7 +136,12 @@ const Chatbot = () => {
 
 
 
-  return <ChatBot flow={flow} settings={settings} />;
+  return (
+    <div id="chatbot-container">
+      <ChatBot flow={flow} settings={settings} />
+    </div>
+  );
+
 };
 
 export default Chatbot;
