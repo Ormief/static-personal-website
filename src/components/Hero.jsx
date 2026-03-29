@@ -7,17 +7,24 @@ export default function Hero() {
     const handleScroll = () => {
       const y = window.scrollY;
 
-      const start = 583;     // no shrinking before this
-      const duration = 22;  // how fast it shrinks after
+      const start = 400;
+      const duration = 35;
+      //console.log(y, 'z');
+      // Before threshold → absolutely no movement
+      if (y <= start) {
+        setShrink(0);
+        return;
+      }
 
-      // Dead zone: stays 0 until y > start
-      const progress = Math.max(0, y - start);
+      // After threshold → begin shrinking immediately
+      const progress = y;
+      const clamped = Math.min(progress , 1);
 
-      // Clamp between 0 and 1
-      const clamped = Math.min(progress / duration, 1);
+      //console.log(y);
 
       setShrink(clamped);
     };
+
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -35,8 +42,8 @@ export default function Hero() {
   const padding = basePadding - shrink * (basePadding - minPadding);
 
   // Scroll transforms
-  const scale = 1 - shrink * 0.135;
-  const opacity = 1 - shrink * 0.05;
+  const scale = 1 - shrink * 0.138;
+  const opacity = 1 - shrink * 0.04;
 
   return (
     <div>
@@ -66,13 +73,14 @@ export default function Hero() {
               text-center space-y-6 max-w-2xl mx-auto
               opacity-0 translate-y-4
               animate-[heroFade_3s_ease-out_forwards]
+              px-4 sm:px-6
             "
           >
             <h1 className="text-5xl font-bold tracking-tight hover:text-blue-500 transition-colors duration-700">
               Nick Fouras
             </h1>
 
-            <p className="text-xl text-gray-500 leading-relaxed">
+            <p className="text-xl text-gray-500 leading-relaxed ">
               Professional with a background in AI, computer science, and finance,
               bringing both technical knowledge and business acumen to startups.
             </p>
